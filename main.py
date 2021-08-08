@@ -28,7 +28,7 @@ if value_a > value_b:
 else:
     more_followers = value_b
 
-#Pergunta e verifica resposta do usuário
+#Pergunta e atribui resposta do usuário
 user_answer = input("Who has more followers? Type 'A' or 'B': ").lower()   
 
 if user_answer[0] == 'a':
@@ -36,7 +36,10 @@ if user_answer[0] == 'a':
 else:
     user_answer = value_b
 
-if user_answer == more_followers:
+
+while user_answer == more_followers:
     print(f'Você acertou. {user_answer} - {more_followers}')
-else:
-    print(f'Você errou. {user_answer} - {more_followers}')
+
+print(f'Você errou. {user_answer} - {more_followers}')
+
+#Continuar do último while. Ir substituindo os valores até o usuário errar.
